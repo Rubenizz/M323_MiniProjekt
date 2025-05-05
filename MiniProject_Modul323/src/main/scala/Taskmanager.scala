@@ -4,6 +4,8 @@ import model.Task
 import java.util.UUID
 
 object TaskManager {
+
+  //pure functions
   def addTask(tasks: List[Task], title: String, category: String, deadline: String): List[Task] = {
     tasks :+ Task(UUID.randomUUID().toString, title, category, deadline)
   }

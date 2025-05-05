@@ -2,6 +2,7 @@ package model
 
 import upickle.default.{ReadWriter, macroRW}
 
+//immutable daten gehalten
 case class Task(
                  id: String,
                  title: String,
